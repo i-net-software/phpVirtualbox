@@ -1,5 +1,7 @@
-FROM alpine
-MAINTAINER Christian Gatzlaff <cgatzlaff@gmail.com>
+ARG ALPINE_RELEASE_TAG=latest
+
+FROM alpine:${ALPINE_RELEASE_TAG}
+LABEL MAINTAINER="Christian Gatzlaff <cgatzlaff@gmail.com>"
 
 ARG PHP_VIRTUAL_BOX_RELEASE=5.2-1
 
